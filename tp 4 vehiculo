@@ -1,0 +1,14 @@
+class Vehiculo:
+    def __init__(self, marca, modelo, año, consumo):
+        self.marca = marca
+        self.modelo = modelo
+        self.año = año
+        self.consumo = consumo 
+    def eficiencia(self):
+        return 100 / self.consumo  
+    def combustible(self, km):
+        return (self.consumo * km) / 100  
+class Automovil(Vehiculo):
+    pass
+class Motocicleta(Vehiculo):
+    pass
