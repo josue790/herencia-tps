@@ -1,0 +1,13 @@
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+    def mostrar_info(self):
+        print("Nombre:", self.nombre)
+        print("Edad:", self.edad)
+class Estudiante(Persona):
+    def mostrar_info(self):
+        print(self.nombre, "es estudiante.")
+class Profesor(Persona):
+    def mostrar_info(self):
+        print(self.nombre, "es profesor.")
