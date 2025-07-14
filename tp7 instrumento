@@ -1,0 +1,11 @@
+class Instrumento:
+    def __init__(self, nombre):
+        self.nombre = nombre
+    def sonido(self):
+        print(self.nombre, "suena bien")
+class Guitarra(Instrumento):
+    def tocar(self):
+        print("♫ Suena guitarra ♫")
+class Piano(Instrumento):
+    def tocar(self):
+        print("♫ Suena piano ♫")
