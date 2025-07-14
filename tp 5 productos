@@ -1,0 +1,10 @@
+class Producto:
+    def __init__(self, nombre, precio):
+        self.nombre = nombre
+        self.precio = precio
+class ProductoAlimenticio(Producto):
+    def aplicar_descuento(self):
+        return self.precio - 50 
+class ProductoElectronico(Producto):
+    def aplicar_descuento(self):
+        return self.precio - 100  
