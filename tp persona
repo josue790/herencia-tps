@@ -11,3 +11,8 @@ class Estudiante(Persona):
 class Profesor(Persona):
     def mostrar_info(self):
         print(self.nombre, "es profesor.")
+if __name__ == "__main__":
+    persona1 = Estudiante("Juan", 20)
+    persona2 = Profesor("Ana", 40)
+    persona1.mostrar_info()
+    persona2.mostrar_info()
