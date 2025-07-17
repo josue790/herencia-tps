@@ -7,3 +7,8 @@ class Avion(Transporte):
     pass
 class Barco(Transporte):
     pass
+if __name__ == "__main__":
+    avion = Avion(600)
+    barco = Barco(50)
+    print("Tiempo en avión:", avion.tiempo_viaje(1200))
+    print("Tiempo en barco:", barco.tiempo_viaje(1200))
