@@ -10,3 +10,8 @@ class EmpleadoTemporal(Empleado):
     def calcular_aumento(self):
         self.salario = self.salario + 100
         print("Nuevo salario del temporal:", self.salario)
+if __name__ == "__main__":
+    gerente = Gerente("Ana", 2000)
+    temporal = EmpleadoTemporal("Luis", 1500)
+    gerente.calcular_aumento()
+    temporal.calcular_aumento()
