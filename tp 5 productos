@@ -4,7 +4,12 @@ class Producto:
         self.precio = precio
 class ProductoAlimenticio(Producto):
     def aplicar_descuento(self):
-        return self.precio - 50 
+        return self.precio - 50
 class ProductoElectronico(Producto):
     def aplicar_descuento(self):
-        return self.precio - 100  
+        return self.precio - 100
+if __name__ == "__main__":
+    pan = ProductoAlimenticio("Pan", 200)
+    tv = ProductoElectronico("Televisor", 1500)
+    print("Precio con descuento pan:", pan.aplicar_descuento())
+    print("Precio con descuento TV:", tv.aplicar_descuento())
