@@ -3,12 +3,17 @@ class Vehiculo:
         self.marca = marca
         self.modelo = modelo
         self.año = año
-        self.consumo = consumo 
+        self.consumo = consumo
     def eficiencia(self):
-        return 100 / self.consumo  
+        return 100 / self.consumo
     def combustible(self, km):
-        return (self.consumo * km) / 100  
+        return (self.consumo * km) / 100
 class Automovil(Vehiculo):
     pass
 class Motocicleta(Vehiculo):
     pass
+if __name__ == "__main__":
+    auto = Automovil("Toyota", "Corolla", 2020, 7)
+    moto = Motocicleta("Honda", "Wave", 2021, 3)
+    print("Consumo del auto en 100 km:", auto.combustible(100))
+    print("Consumo de la moto en 100 km:", moto.combustible(100))
