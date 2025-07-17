@@ -16,3 +16,10 @@ class Tienda:
                 nueva = nueva + [self.inventario[i]]
             i = i + 1
         self.inventario = nueva
+if __name__ == "__main__":
+    tienda = Tienda("la Tienda")
+    tienda.agregar_producto("Pan")
+    tienda.agregar_producto("Leche")
+    tienda.mostrar_info()
+    tienda.eliminar_producto("Pan")
+    tienda.mostrar_info()
