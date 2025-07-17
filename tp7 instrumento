@@ -5,7 +5,14 @@ class Instrumento:
         print(self.nombre, "suena bien")
 class Guitarra(Instrumento):
     def tocar(self):
-        print("♫ Suena guitarra ♫")
+        print("Suena guitarra ♫")
 class Piano(Instrumento):
     def tocar(self):
-        print("♫ Suena piano ♫")
+        print("Suena piano ♫")
+if __name__ == "__main__":
+    guitarra = Guitarra("Guitarra")
+    piano = Piano("Piano")
+    guitarra.sonido()
+    guitarra.tocar()
+    piano.sonido()
+    piano.tocar()
